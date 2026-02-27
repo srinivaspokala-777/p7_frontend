@@ -1,0 +1,116 @@
+.app{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px calc(100% - 90px) 40px;
+}
+.app .header{
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.app .section{
+    overflow: auto;
+}
+.app .footer{
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    font-size: 8pt;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.app .section table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.app .section table thead{
+    background: limegreen;
+    color: white;
+    height: 33px;
+}
+.app section table tr th,
+.app .section table tr td{
+    height: 33px;
+    border: 1px solid #ccc;
+}
+.app .section table tr:nth-child(even){
+    background: #eee;
+}
+.app .section table tr td img {
+    height: 16px;
+    margin-right:10px;
+
+}
+.app .section table tr td img:hover{
+    cursor:pointer;
+    opacity: 0.5;
+}
+.app .popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app .popup .panel{
+    background: white;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.app .popup .panel span{
+    font-size: 16pt;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    cursor: pointer;
+}
+.app .panel span :hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.app .popup .panel label{
+    margin-top: 10px ;
+
+}
+.app .popup .panel input{
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+.app .popup .panel button{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background: chartreuse;
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+}
+.app .popup .panel button:hover{
+    cursor: pointer;
+    background: limegreen;
+}
+.app .footer button{
+    height: 30px;
+    border: none;
+    background: chartreuse;
+    color: white;
+    border-radius: 5px;
+}
+.app .footer button:hover{
+    cursor: pointer;
+    background: limegreen;
+}
